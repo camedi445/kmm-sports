@@ -1,47 +1,16 @@
-CREATE TABLE League (
-    idLeague TEXT NOT NULL,
-    strLeague TEXT DEFAULT NULL
-);
 
 CREATE TABLE Team (
-    idTeam TEXT NOT NULL,
-    strTeam TEXT DEFAULT NULL,
-    strTeamBadge TEXT DEFAULT NULL,
-    strStadium TEXT DEFAULT NULL,
-    strTeamJersey TEXT DEFAULT NULL,
-    strDescriptionEN TEXT DEFAULT NULL,
-    strYoutube TEXT DEFAULT NULL,
-    strWebsite TEXT DEFAULT NULL,
-    strFacebook TEXT DEFAULT NULL,
-    strTwitter TEXT DEFAULT NULL,
-    strInstagram TEXT DEFAULT NULL
+    id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    badge TEXT NOT NULL
 );
-
-CREATE TABLE Event (
-    strEvent TEXT DEFAULT NULL
-);
-
-insertLeague:
-INSERT INTO League(idLeague, strLeague)
-VALUES(?, ?);
 
 insertTeam:
-INSERT INTO Team(idTeam, strTeam,strTeamBadge,strStadium,strTeamJersey,strDescriptionEN,strYoutube,strWebsite,strFacebook,strTwitter,strInstagram)
-VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-
-insertEvent:
-INSERT INTO Event(strEvent)
-VALUES(?);
-
-removeAllLeagues:
-DELETE FROM League;
+INSERT INTO Team(id, name,badge)
+VALUES(?, ?, ?);
 
 removeAllTeams:
 DELETE FROM Team;
 
-removeAllEvents:
-DELETE FROM Event;
-
-selectLeagueById:
-SELECT * FROM League
-WHERE idLeague = ?;
+selectAllTeams:
+SELECT * FROM Team;
