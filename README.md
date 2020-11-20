@@ -16,6 +16,5 @@ iOS remember to open `.xcworkspace` file (and not `.xcodeproj` one).
 * [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)
 * [Kotlinx Serialization](https://github.com/Kotlin/kotlinx.serialization)
 * [Ktor client library](https://github.com/ktorio/ktor)
-* [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)
 * [Jetpack Compose](https://developer.android.com/jetpack/compose)
 * [SwiftUI](https://developer.apple.com/documentation/swiftui)
