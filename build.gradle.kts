@@ -5,7 +5,7 @@ buildscript {
         google()
         mavenCentral()
     }
-    val toolsGradleVersion = "4.2.0-alpha14"
+    val toolsGradleVersion = "4.2.0-alpha16"
     val kotlinVersion = "1.4.10"
     val sqlDelightVersion: String by project
 
